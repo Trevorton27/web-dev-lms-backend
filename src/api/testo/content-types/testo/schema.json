@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testos",
+  "info": {
+    "singularName": "testo",
+    "pluralName": "testos",
+    "displayName": "testo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
