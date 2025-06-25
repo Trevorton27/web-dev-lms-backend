@@ -5,6 +5,12 @@ services:
     image: strapi/strapi
     environment:
       NODE_ENV: development  
+      DATABASE_CLIENT: postgres
+      DATABASE_NAME: web-dev-lms
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: password
   postgres:
     image: postgres:15
     container_name: strapi_postgres
