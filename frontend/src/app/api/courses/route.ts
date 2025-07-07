@@ -5,13 +5,13 @@ import { NextResponse } from 'next/server';
 export async function GET() {
 
   try {
-      console.log('STRAPI_URL:', process.env.STRAPI_URL);
-console.log('STRAPI_API_TOKEN:', process.env.STRAPI_TOKEN?.slice(0, 10)); // partial
+      console.log('STRAPI_URL:', process.env.NEXT_PUBLIC_STRAPI_URL);
+console.log('STRAPI_API_TOKEN:', process.env.NEXT_PUBLIC_STRAPI_TOKEN?.slice(0, 10)); // partial
 console.log('I fired.')
 
-    const res = await fetch(`${process.env.STRAPI_URL}/api/courses`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/courses`, {
       headers: {
-        Authorization: `Bearer ${process.env.STRAPI_TOKEN}`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_TOKEN}`,
       },
     });
     console.log('res tho: ', res)

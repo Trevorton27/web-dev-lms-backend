@@ -1,8 +1,7 @@
-version: '3.8'
 
 services:
   strapi:
-    image: strapi/strapi
+    image: node:20
     environment:
       NODE_ENV: development  
       DATABASE_CLIENT: postgres
